@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+      <img src="C:\Users\CBIT\Desktop\ead\download.png" alt="Webinar Banner" style="display: block; margin: 0 auto; width: 100%; max-width: 600px;">
+        <h2>Webinar Registration Form</h2>
+        <p style="text-align: center; color: grey;">
+            We're excited to invite you to our upcoming webinar, where you'll gain valuable insights. Whether you're a professional, a student, or just passionate about learning, this webinar is designed to provide practical knowledge and foster meaningful discussions. To register, please fill in the details below, select your preferred topics, and let us know any questions you may have. We look forward to connecting with you!
+        </p>
+        
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your 10-digit phone number" required>
+            
+            <!-- Designation -->
+            <label for="designation">Designation:</label>
+            <select id="designation" name="designation" required>
+                <option value="">Select your Designation</option>
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
+                <option value="Employer">Employer</option>
+                <option value="Teacher">Teacher</option>
+            </select>
+
+            <!-- Organization -->
+            <label for="organization">Organization:</label>
+            <input type="text" id="organization" name="organization" placeholder="Enter your Organization Name" required>
+            
+            <!-- Topics -->
+            <label>Topics:</label>
+            <div class="interests">
+                <label>
+                    <input type="checkbox" id="coding" name="interests" value="Python Programming">
+                    Python Programming
+                </label>
+                <label>
+                    <input type="checkbox" id="reading" name="interests" value="Ethical AI">
+                    Ethical AI
+                </label>
+                <label>
+                    <input type="checkbox" id="traveling" name="interests" value="Management">
+                    Management
+                </label>
+            </div>
+
+            <!-- Preferred Date -->
+            <label for="preferredDate">Preferred Date:</label>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+             
+            <!-- Queries -->
+            <label for="queries">Queries:</label>
+            <textarea id="queries" name="queries" placeholder="Enter your queries here"         ></textarea>
+
+            <!-- How Did You Hear About This Webinar? -->
+            <label>How Did You Hear About This Webinar?</label>
+            <div class="gender-options">
+                <label>
+                    <input type="radio" id="socialMedia" name="hearAbout" value="Social Media" required>
+                    Social Media
+                </label>
+                <label>
+                    <input type="radio" id="referral" name="hearAbout" value="Referral" required>
+                    Referral
+                </label>
+                <label>
+                    <input type="radio" id="other" name="hearAbout" value="Other" required>
+                    Other
+                </label>
+            </div>
+            
+            <!-- Newsletter Subscription -->
+            <div class="interests">
+                <label><strong>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="Subscribe to our Newsletter">
+                    Subscribe to our Newsletter
+                  </strong>
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

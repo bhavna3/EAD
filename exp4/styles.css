@@ -1,0 +1,131 @@
+/* styles.css */
+body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      margin-top: 300px;
+  }
+  
+  .form-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      margin: 20px;
+      padding-left: 10px;
+      
+  }
+  
+  h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #080808;
+      font-size: 24px;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #0f0f0f;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #0f0f0f;
+      background-color: #f9f9f9;
+      transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="date"]:focus,
+  select:focus,
+  textarea:focus {
+      border-color: #28a745;
+      outline: none;
+  }
+  
+  .gender-options,
+  .interests {
+      margin-bottom: 20px;
+  }
+  
+  .gender-options label,
+  .interests label {
+      margin-right: 15px;
+      font-weight: 500;
+      color: #131212;
+  }
+  
+  .interests {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .interests label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+  }
+  
+  textarea {
+      resize: vertical;
+      min-height: 100px;
+  }
+  
+  button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+      background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+      .form-container {
+          padding: 20px;
+      }
+  
+      h2 {
+          font-size: 20px;
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      select,
+      textarea {
+          font-size: 12px;
+      }
+  
+      button {
+          font-size: 14px;
+      }
+  }
